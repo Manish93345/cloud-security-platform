@@ -81,3 +81,16 @@ DAY 4: Security Groups ko programmatically read karna aur samajhna.
     STEP 2: Run karo
     STEP 3: Intentionally Test Karna (Optional but Powerful)
     STEP 4: Git Commit
+
+    created: test_security_groups.py -> Read security groups, check inbound rules, 
+
+
+DAY 5: HIGH RISK DETECTOR
+    Script ko modify karenge taaki:
+        Agar 22 open to 0.0.0.0/0 →Console pe likhe:[HIGH RISK] SSH exposed to entire internet
+    
+    Updated test_security_groups.py
+
+DAY 6: Generic Internet Exposure Detector (Agar koi bhi port duniya ke liye open hai → flag karo)
+    
+
