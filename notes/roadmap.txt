@@ -1,7 +1,7 @@
 Cloud Security Automation Platform
 
 
-Phase A – Foundation
+# Phase A – Foundation
 
 Day 1 – Environment Setup
     Day 1 Completed:
@@ -92,5 +92,14 @@ DAY 5: HIGH RISK DETECTOR
     Updated test_security_groups.py
 
 DAY 6: Generic Internet Exposure Detector (Agar koi bhi port duniya ke liye open hai → flag karo)
+    Improving test_security_groups.py
+        Detects ALL internet exposure
+        Classifies risk level
+        Detects multiple sensitive ports
+        More realistic logic
+
+
+DAY 7: Structured JSON Security Report generate karna.
+    New File banao :-> backend/security_scanner.py
     
 
