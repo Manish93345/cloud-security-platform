@@ -1,3 +1,70 @@
 Cloud Security Automation Platform
+
+
 Phase A – Foundation
+
 Day 1 – Environment Setup
+    Day 1 Completed:
+    - Project folder created
+    - Python environment ready
+    - Virtual environment set
+    - Git initialized
+
+DAY 2
+    STEP 1: AWS Account Safety First (10 min)
+        AWS Console login karo
+        Billing → Budgets:
+        Budget set karo (₹0 / $0 alert)
+        Email alert on
+        Isse peace of mind milta hai baby 😌
+    STEP 2: IAM — Dil aur Dimag dono se samjho 🧠🔐
+        IAM ka simple matlab:
+        User = tum (tool)
+        Permission = kya dekh sakta hai
+        Policy = rules
+        Hum READ-ONLY permission denge.
+        No delete, no modify. Safe & professional.
+    STEP 3: IAM User Create Karo (Step-by-step)
+        IAM → Users → Create user
+        Username: cloud-scanner-user
+        Access type:
+        ✅ Programmatic access (Access Key)
+        Permissions:
+        Attach policy directly
+        Choose: ReadOnlyAccess
+        Create user
+        👉 End mein:
+        Access Key ID
+        Secret Access Key
+        ⚠️ Important baby:
+        Inko notes mein likh lo
+        GitHub pe kabhi upload mat karna ❌
+    STEP 4: AWS CLI Install & Configure (15 min)
+        Install AWS CLI (Windows)
+        AWS official site se install karo
+        Check:
+        aws --version
+        Configure:
+        aws configure
+        Fill karo:
+        Access Key
+        Secret Key
+        Region: ap-south-1 (India)
+        Output format: json
+    STEP 5: First AWS Test (Confidence Booster 💪)
+        Command run karo:
+        aws iam list-users
+        Agar output aaya → AWS + CLI perfectly connected 🎉
+    
+    Day 2 Completed:
+        - AWS account secured with budget alert
+        - IAM read-only user created
+        - AWS CLI configured
+        - First AWS command tested successfully
+
+
+DAY 3
+    STEP 1: boto3 install karo
+    STEP 2: First AWS Python Script (S3 Test)
+    STEP 3: Script Run karo
+    STEP 4: Git Commit karo
