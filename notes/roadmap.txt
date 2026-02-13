@@ -101,5 +101,13 @@ DAY 6: Generic Internet Exposure Detector (Agar koi bhi port duniya ke liye open
 
 DAY 7: Structured JSON Security Report generate karna.
     New File banao :-> backend/security_scanner.py
-    
+    I built a cloud security scanner that detects internet-exposed ports and generates structured risk reports.
+
+    Till Now:
+        Identify karta hai vulnerable resource
+        Exact port batata hai
+        Protocol batata hai
+        Exposure range batata hai
+        Risk level classify karta hai
+        JSON structured output deta hai
 
