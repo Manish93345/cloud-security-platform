@@ -1,5 +1,6 @@
 import boto3
 import json
+from report_writer import generate_report
 
 SENSITIVE_PORTS = [22, 3389, 3306, 5432, 27017]
 
@@ -43,5 +44,7 @@ def scan_security_groups():
 if __name__ == "__main__":
     results = scan_security_groups()
 
-    print("\n=== JSON Security Report ===\n")
-    print(json.dumps(results, indent=4))
+    report = generate_report(results)
+
+    print("\n=== Security Report Summary ===\n")
+    print(report["summary"])

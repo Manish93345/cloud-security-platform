@@ -1,0 +1,17 @@
+{
+    "summary": {
+        "total_findings": 1,
+        "high": 1,
+        "medium": 0,
+        "critical": 0
+    },
+    "findings": [
+        {
+            "security_group": "mini-project-sg",
+            "port": 22,
+            "protocol": "tcp",
+            "cidr": "0.0.0.0/0",
+            "risk": "HIGH"
+        }
+    ]
+}
