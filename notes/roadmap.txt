@@ -68,3 +68,16 @@ DAY 3
     STEP 2: First AWS Python Script (S3 Test)
     STEP 3: Script Run karo
     STEP 4: Git Commit karo
+
+DAY 4: Security Groups ko programmatically read karna aur samajhna.
+    Security Group = firewall rules for EC2 servers
+        Port 22 open to 0.0.0.0/0 ❌ (dangerous)
+        Port 80 open to world ✅ (web server case)
+    Hum kya karenge?
+        AWS se security groups read karenge
+        Check karenge koi rule duniya ke liye open toh nahi
+
+    STEP 1: EC2 Client Script banao
+    STEP 2: Run karo
+    STEP 3: Intentionally Test Karna (Optional but Powerful)
+    STEP 4: Git Commit
