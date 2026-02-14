@@ -123,3 +123,14 @@ PROFESSIONAL TOUCH START: Professional Report + Summary Engine banana
         Reporting Layer
 
 
+S3 Public Bucket Detection
+    STEP 1: New Scanner File Banao
+        backend/
+            scanners/
+    s3_scanner.py
+
+    STEP 2: Integrate in main scanner   security_scanner.py
+
+
+
+
