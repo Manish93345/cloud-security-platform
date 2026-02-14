@@ -132,5 +132,15 @@ S3 Public Bucket Detection
     STEP 2: Integrate in main scanner   security_scanner.py
 
 
+Making clean Architecture
+    backend/
+        scanners/
+            ec2_scanner.py
+            s3_scanner.py
+        core/
+            report_writer.py
+        main.py
+
+
 
 
