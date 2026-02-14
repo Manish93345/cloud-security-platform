@@ -143,4 +143,15 @@ Making clean Architecture
 
 
 
+PHASE B
+
+STEP 1: Flask API Banana
+    pip install flask
+    backend/api.py file banao
+    http://127.0.0.1:5000/  
+    http://127.0.0.1:5000/scan  -> it gives the report json 
+    I built a web-based cloud security automation API that scans AWS infrastructure.
+
+
+
 
