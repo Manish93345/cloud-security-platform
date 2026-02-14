@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Security Automation</title>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        button { padding: 10px 20px; font-size: 16px; }
+        pre { background: #f4f4f4; padding: 15px; }
+    </style>
+</head>
+<body>
+
+    <h2>Cloud Security Automation Platform 🚀</h2>
+
+    <button onclick="runScan()">Start Scan</button>
+
+    <h3>Results:</h3>
+    <pre id="result"></pre>
+
+    <script>
+        function runScan() {
+            fetch("/scan")
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerText = 
+                        JSON.stringify(data, null, 4);
+                });
+        }
+    </script>
+
+</body>
+</html>

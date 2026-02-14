@@ -151,7 +151,41 @@ STEP 1: Flask API Banana
     http://127.0.0.1:5000/  
     http://127.0.0.1:5000/scan  -> it gives the report json 
     I built a web-based cloud security automation API that scans AWS infrastructure.
+    Browser → Flask API → Scanner Engine → AWS → JSON Response
+
+NEXT STEP (Strategic & Professional Move) -> Add Timestamped Reports + Scan History
+    Har scan ka alag record
+    History maintain
+    Future dashboard ke liye base ready
+
+    report_writer.py Update
+    python backend/main.py
+    python backend/api.py
+    Check reports folder
+        security_report_2026-02-13_22-31-05.json
+    The system maintains timestamped scan history for audit and future dashboard integration.
 
 
+Next Step: Add Scan Trigger Control + Scan History API
+    Abhi kya hai?
+        /scan run karta hai
+        Report save hoti hai
+    Par user:
+        Past scans dekh nahi sakta
+        History fetch nahi kar sakta
 
+    /history endpoint
+    /report/<filename> endpoint
+
+SWITCH TO DJANGO WHEN WORKING WITH USER ACCOUNT AUTHENTICATION AND DATABASES
+
+
+NEXT STEP: FRONTEND LAYER
+    Ab tak: Browser → Flask API → AWS → JSON → File
+    Ab hum banayenge: Browser UI → API call → Live Result Screen
+
+    backend/
+        templates/
+            index.html
+    python backend/api.py
 

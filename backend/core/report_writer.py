@@ -1,7 +1,9 @@
 import json
 import os
+from datetime import datetime
 
 def generate_report(findings):
+
     summary = {
         "total_findings": len(findings),
         "high": 0,
@@ -15,13 +17,16 @@ def generate_report(findings):
             summary[risk] += 1
 
     report = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "summary": summary,
         "findings": findings
     }
 
     os.makedirs("reports", exist_ok=True)
 
-    with open("reports/security_report.json", "w") as f:
+    filename = datetime.now().strftime("reports/security_report_%Y-%m-%d_%H-%M-%S.json")
+
+    with open(filename, "w") as f:
         json.dump(report, f, indent=4)
 
     return report
