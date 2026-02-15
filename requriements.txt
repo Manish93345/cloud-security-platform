@@ -2,3 +2,8 @@ pip install boto3
 pip install flask
 npm create vite@latest frontend  
 pip install flask-cors
+
+
+
+frontend
+npm install react-router-dom
