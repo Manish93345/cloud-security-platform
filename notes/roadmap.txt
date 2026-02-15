@@ -232,4 +232,23 @@ Multi-Page Dashboard + Scan History Page
         Dashboard + History separation
 
 
+SHIFTING TO DJANGO
+    created backend_django/
+        django-admin startproject cloudsaas
+   
+        backend_django/
+        │
+        ├── cloudsaas/          ← project root
+        │   ├── manage.py       ← command runner
+        │   └── cloudsaas/      ← actual Django config package
+        │       ├── settings.py
+        │       ├── urls.py
+        │       ├── asgi.py
+        │       └── wsgi.py
+
+        cd backend_django/cloudsaas : -> python manage.py startapp scanner
+
+
+(Django Phase 1)
+
 
