@@ -274,3 +274,22 @@ SHIFTING TO DJANGO
 
 
 
+
+NEXT BIG PHASE
+
+Authentication + Multi-User SaaS Start
+    Register
+    Login
+    JWT token
+    Protected scan API
+    Per-user scan history (DB stored)
+
+    pip install djangorestframework-simplejwt
+
+
+NEXT PHASE
+    Frontend Login Integration (Real SaaS Mode)
+        
+
+
+

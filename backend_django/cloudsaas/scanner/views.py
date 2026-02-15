@@ -6,13 +6,17 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .services.scanner_engine import run_full_scan
 from django.conf import settings
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import permission_classes
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def scan_view(request):
     report = run_full_scan()
     return Response(report)
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def history_view(request):
     reports_dir = os.path.join(settings.BASE_DIR, "reports")
 
