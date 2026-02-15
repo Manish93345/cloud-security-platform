@@ -189,3 +189,22 @@ NEXT STEP: FRONTEND LAYER
             index.html
     python backend/api.py
 
+
+
+
+
+
+
+PHASE C — PROPER SaaS ARCHITECTURE START
+
+
+    Root Structure
+    root/
+        backend/
+        frontend/
+        reports/
+
+Created a basic frontend and checking the scan result
+Connected backend and frontend
+
+

@@ -2,15 +2,18 @@ import os
 import json
 
 from flask import Flask, jsonify
-from main import run_full_scan
+from main import run_full_scan, generate_report
 from flask import render_template
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/scan", methods=["GET"])
 def scan():
     results = run_full_scan()
-    return jsonify(results)
+    report = generate_report(results)
+    return jsonify(report)
 
 @app.route("/")
 def home():
