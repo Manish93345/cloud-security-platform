@@ -6,7 +6,7 @@ function App() {
 
   const runScan = async () => {
     setLoading(true);
-    const response = await fetch("http://127.0.0.1:5000/scan");
+    const response = await fetch("http://127.0.0.1:8000/api/scan/");
     const result = await response.json();
     setReport(result);
     setLoading(false);

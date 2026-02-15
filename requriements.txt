@@ -3,6 +3,7 @@ pip install flask
 npm create vite@latest frontend  
 pip install flask-cors
 pip install django
+pip install django-cors-headers
 
 
 

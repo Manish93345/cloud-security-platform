@@ -250,5 +250,27 @@ SHIFTING TO DJANGO
 
 
 (Django Phase 1)
+    activate venv 
+    pip install django djangorestframework
+    backend_django/cloudsaas/cloudsaas/settings.py
+        INSTALLED_APPS = [
+            add: 'rest_framework',
+                    'scanner',
+    python manage.py migrate
+
+
+        python manage.py runserver
+            React (5173)
+            ↓
+        Django REST API (8000)
+            ↓
+        Scanner Engine (services/)
+            ↓
+        AWS
+            ↓
+        Report JSON
+
+    pip install django-cors-headers
+
 
 

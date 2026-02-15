@@ -4,7 +4,7 @@ function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/history")
+    fetch("http://127.0.0.1:8000/api/history/")
       .then(res => res.json())
       .then(data => setHistory(data));
   }, []);
