@@ -289,7 +289,18 @@ Authentication + Multi-User SaaS Start
 
 NEXT PHASE
     Frontend Login Integration (Real SaaS Mode)
-        
+        User → Login (React)
+            ↓
+        Django → JWT token
+            ↓
+        React stores token
+            ↓
+        Scan request with Authorization header
+            ↓
+        Protected API
+
+        auth: username: lisababy  , pass: lisajaanu
+
 
 
 

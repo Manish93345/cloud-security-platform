@@ -3,10 +3,15 @@ import { useState } from "react";
 function App() {
   const [report, setReport] = useState(null);
   const [loading, setLoading] = useState(false);
+  const token = localStorage.getItem("access");
 
   const runScan = async () => {
     setLoading(true);
-    const response = await fetch("http://127.0.0.1:8000/api/scan/");
+    const response = await fetch("http://127.0.0.1:8000/api/scan/", {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    });
     const result = await response.json();
     setReport(result);
     setLoading(false);

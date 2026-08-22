@@ -4,7 +4,13 @@ function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/history/")
+    const token = localStorage.getItem("access");
+
+    fetch("http://127.0.0.1:8000/api/history/", {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    })
       .then(res => res.json())
       .then(data => setHistory(data));
   }, []);
